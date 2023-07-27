@@ -43,7 +43,7 @@ const MeetThePunk = () => {
             {/* nft image part  */}
             <div className='flex flex-row justify-between mt-[128px] ' >
                 <div className='flex flex-col' >
-                    {/* selectedPunk === index  */}
+
                     {
                         punks.map((item, index) => {
                             return (
@@ -64,7 +64,7 @@ const MeetThePunk = () => {
 const PunkSelectionCard = ({ punk, onClick, isSelected, keyValue }: { punk: { bg: string, text: string, image: StaticImageData }, onClick: () => void, isSelected: boolean, keyValue: number, }) => {
     console.log(keyValue)
     return (
-        <button key={keyValue} onClick={onClick} >
+        <button key={`Punk${keyValue}`} onClick={onClick} >
             <p className=
                 {`font-fixel-medium text-[22px] mb-8 text-white w-[550px] text-left  rounded-[30px] px-[40px] py-[40px]   ${isSelected ? `${punk.bg}  p-[2px] ` : "border-border border-2"}   `} >{punk.text}</p>
         </button>

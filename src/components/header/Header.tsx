@@ -15,26 +15,17 @@ const Header = () => {
         ImageAssets.image6,
         ImageAssets.image7,
         ImageAssets.image8,
+        ImageAssets.image9,
     ]
 
 
     return (
-        <div className={' flex flex-col items-center bg-black rounded-b-[56px] '} >
+        <div className={' flex flex-col bg-black rounded-b-[56px] '} >
 
             <div className='header-slider-container' >
 
-                <div className='header-slider' >
-                    <div className='flex flex-row' >    {
-                        headerImage.map((item, index) => {
-                            return (
-                                <Image key={index} src={item} alt="header nft image" className='headerImage' />
-                            )
-                        })
-                    }</div>
-                </div>
-                <div className='header-slider' >
-                    <div className='flex flex-row' >
-
+                <div className='flex flex-row' >
+                    <div className='header-slider' >
                         {
                             headerImage.map((item, index) => {
                                 return (
@@ -43,6 +34,17 @@ const Header = () => {
                             })
                         }
                     </div>
+
+                    <div className='header-slider' >
+                        {
+                            headerImage.map((item, index) => {
+                                return (
+                                    <Image key={index} src={item} alt="header nft image" className='headerImage' />
+                                )
+                            })
+                        }
+                    </div>
+
                 </div>
 
             </div>

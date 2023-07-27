@@ -35,6 +35,8 @@ body {
   padding: 0%
 }
 
+
+
 .navTextButton {
   @apply text-white font-fixel-medium text-[18px] mr-[34px]
 }
@@ -88,18 +90,31 @@ body {
 
 
 .header-slider-container {
-  @apply overflow-hidden whitespace-nowrap pt-24
+  @apply overflow-hidden mt-[128px]
 }
 
 
 
 .header-slider {
-  display: inline-block;
-  animation: 5s slide infinite linear;
+  display: flex;
+  flex-direction: row;
+  animation: 25s slide infinite linear;
+
+
 }
 
 
 
 .header-slider-container:hover .header-slider {
   animation-play-state: paused;
+}
+
+
+
+.nftMarketInfo {
+  @apply flex flex-row mt-24 pl-[120px] overflow-hidden
+}
+
+img {
+  max-width: fit-content;
 }

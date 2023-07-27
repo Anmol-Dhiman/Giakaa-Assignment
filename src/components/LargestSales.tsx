@@ -9,19 +9,25 @@ const LargestSales = () => {
 
 
     return (
-        <div className={"container "} >
-            <div className='flex flex-row justify-between items-center ' >
+        <div className={"py-24 flex flex-col"} >
+            <div className=' px-[120px]  flex flex-row justify-between items-center ' >
                 <p className={"darkHeading"} >Largest Sales</p>
                 <ViewAllButton onClick={() => { }} />
             </div>
-            <div className='flex flex-row mt-24 overflow-x-auto ' >
+
+
+
+            <div className={"flex flex-row mt-24 ml-[120px] overflow-x-scroll "} >
                 {
                     LargestSalesNFTs.map((item, index) => {
-                        return <NFTCard nft={item} key={index} />
+                        return <NFTCard nft={item} index={index} />
                     })
                 }
             </div>
-            <MovingButtons onLeftClick={() => { }} onRightClick={() => { }} />
+
+            <div className=' px-[120px] ' >
+                <MovingButtons onLeftClick={() => { }} onRightClick={() => { }} />
+            </div>
         </div>
     )
 }

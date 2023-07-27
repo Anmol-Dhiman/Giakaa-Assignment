@@ -4,12 +4,13 @@ import contractABI from "../abi/GiakaaAssignment.json"
 import { getNetwork, getAccount, switchNetwork, readContract } from '@wagmi/core'
 
 
-const profile = () => {
+const Profile = () => {
 
 
     const { chain } = getNetwork()
     const account = getAccount()
     const [isClient, setIsClient] = useState(false)
+
     useEffect(() => {
         setIsClient(true)
     }, [])
@@ -33,6 +34,7 @@ const profile = () => {
                             abi: contractABI.abi,
                             functionName: 'getName'
                         })
+                        console.log("got")
 
 
                         console.log(data)
@@ -58,4 +60,4 @@ const profile = () => {
     )
 }
 
-export default profile
+export default Profile
