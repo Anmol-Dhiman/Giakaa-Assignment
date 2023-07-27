@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
-  polygonMumbai,
+  polygonMumbai
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import NavBar from '../src/components/NavBar';

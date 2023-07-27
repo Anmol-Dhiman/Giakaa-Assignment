@@ -17,3 +17,27 @@
   font-family: "Fixel-Bold";
   src: url("../src/assets/fonts/FixelDisplay-Bold.ttf");
 }
+
+body {
+  padding: 0;
+}
+
+.navTextButton {
+  @apply text-white font-fixel-medium text-[18px] mr-[34px]
+}
+
+.navTextButton:hover {
+  @apply text-textHover
+}
+
+.connectButton {
+  @apply text-[#C4EBFF] font-fixel-medium text-[18px] bg-[#63859680] px-[18px] py-[8px] rounded-[100px] mr-[34px] h-fit
+}
+
+.socialIcon {
+  @apply text-white w-[28px] h-[28px] mr-[34px]
+}
+
+.socialIcon:hover {
+  @apply text-textHover
+}

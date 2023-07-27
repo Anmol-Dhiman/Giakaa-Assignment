@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     colors: {
       black: "#101111",
-      white: "#FFF"
+      white: "#FFF",
+      textHover: "#646464",
     },
     fontFamily: {
       'fixel-regular': ['Fixel-Regular', 'sans-serif'],
