@@ -55,7 +55,7 @@ const NavBar = () => {
     return (
         <div className=' flex flex-row justify-between bg-black px-[80px] pt-[20px]  pb-2 items-center '  >
             <Image src={ImageAssets.logo_svg} alt='logo' />
-            <div className='flex flex-row items-center' >
+            <div className={'navContainer ' + "hide"} >
                 <button className='navTextButton' >About</button>
                 <button className='navTextButton'>Collection</button>
                 <button className='navTextButton'>FAQs</button>

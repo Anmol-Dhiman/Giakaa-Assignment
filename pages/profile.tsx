@@ -2,14 +2,15 @@
 import React, { useEffect, useState } from 'react'
 import contractABI from "../abi/GiakaaAssignment.json"
 import { getNetwork, getAccount, switchNetwork, readContract } from '@wagmi/core'
-
+import { useNetwork, useAccount } from 'wagmi'
 
 const Profile = () => {
 
 
-    const { chain } = getNetwork()
-    const account = getAccount()
+    const { chain } = useNetwork()
+    const account = useAccount()
     const [isClient, setIsClient] = useState(false)
+    const [isRequestSent, setIsRequestSent] = useState(false)
 
     useEffect(() => {
         setIsClient(true)
@@ -19,41 +20,35 @@ const Profile = () => {
     useEffect(() => {
         // this means user is connected through wallet
         const networkChecking = async () => {
-            if (account.address != undefined) {
-                if (chain?.id != 80001) {
-                    const network = await switchNetwork({
-                        chainId: 80001,
-                    })
-                    console.log(network)
+            console.log("network checking")
+            if (account.isConnected) {
+                console.log("connected")
+                if (chain?.id != 80001 && !isRequestSent) {
+                    console.log("wrong network")
+                    setIsRequestSent(true)
+                    try {
+                        await switchNetwork({
+                            chainId: 80001,
+                        })
+                    } catch (e) { }
+                    setIsRequestSent(false)
                 }
                 else {
-                    try {
-                        console.log("address", account.address)
-                        const data = await readContract({
-                            address: '0x77fe89354a331aEB51a0737E4aaBcf25c9DbAaBd',
-                            abi: contractABI.abi,
-                            functionName: 'getName'
-                        })
-                        console.log("got")
 
-
-                        console.log(data)
-                    } catch (e) {
-                        console.log("error", e)
-                    }
                 }
             }
 
         }
         networkChecking()
-    }, [account])
+    }, [chain?.id])
+
 
 
 
     return (
         <div className=' flex  h-screen justify-center flex-col items-center bg-black ' >
             <div className='text-white font-fixel-bold text-[32px] ' >
-                {isClient && account.address === undefined ? "Please Connect Your Wallet" : "USERNAME"}
+                {isClient ? account.isConnected && chain?.id === 80001 ? "USERNAME" : "Please Change Your Network" : "Please Connect Your Wallet"}
             </div>
 
         </div>

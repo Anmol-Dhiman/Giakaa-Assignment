@@ -118,3 +118,7 @@ body {
 img {
   max-width: fit-content;
 }
+
+.navContainer {
+  @apply flex flex-row items-center
+}
