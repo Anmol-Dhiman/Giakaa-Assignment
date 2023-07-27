@@ -1,16 +1,19 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Fixel-Regular";
+  src: url("../src/assets/fonts/FixelDisplay-Regular.ttf");
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Fixel-Medium";
+  src: url("../src/assets/fonts/FixelDisplay-Medium.ttf");
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Fixel-Bold";
+  src: url("../src/assets/fonts/FixelDisplay-Bold.ttf");
 }
