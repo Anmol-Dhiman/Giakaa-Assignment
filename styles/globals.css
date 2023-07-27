@@ -18,8 +18,17 @@
   src: url("../src/assets/fonts/FixelDisplay-Bold.ttf");
 }
 
+@font-face {
+  font-family: "Fixel-Black";
+  src: url("../src/assets/fonts/FixelDisplay-Black.ttf");
+}
+
 body {
   padding: 0;
+}
+
+:root {
+  padding: 0%
 }
 
 .navTextButton {

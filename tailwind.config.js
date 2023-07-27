@@ -12,10 +12,12 @@ module.exports = {
       black: "#101111",
       white: "#FFF",
       textHover: "#646464",
+      border: "#565656"
     },
     fontFamily: {
       'fixel-regular': ['Fixel-Regular', 'sans-serif'],
       'fixel-medium': ['Fixel-Medium', 'sans-serif'],
+      'fixel-black': ['Fixel-Black', 'sans-serif'],
       'fixel-bold': ['Fixel-Bold', 'sans-serif']
     },
     fontWeight: {

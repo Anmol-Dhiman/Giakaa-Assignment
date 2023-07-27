@@ -16,6 +16,7 @@ import logo from "../assets/logo.png"
 import metamask from "../assets/metamask.png"
 import eth from "../assets/eth.png"
 const logo_svg = require("../assets/logo.svg") as string
+const route_icon = require("../assets/route_icon.svg") as string
 
 export const ImageAssets = {
     image1,
@@ -34,5 +35,6 @@ export const ImageAssets = {
     logo,
     metamask,
     eth,
-    logo_svg
+    logo_svg,
+    route_icon
 }
