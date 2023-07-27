@@ -62,7 +62,7 @@ const NavBar = () => {
                 </button>
                 {showDropDown && <div className="flex flex-col absolute z-10 mt-28  right-[230px] rounded-xl px-2 py-2 border-[1px] border-[#475068] bg-black">
                     <Link href="/profile">
-                        <button className='text-white font-fixel-medium text-[18px]'>profile</button>
+                        <button onClick={() => setDropDownStatus(false)} className='text-white font-fixel-medium text-[18px]'>profile</button>
                     </Link>
                     <button className='text-white font-fixel-medium text-[18px]' onClick={disconnectAccount} >log out</button>
 

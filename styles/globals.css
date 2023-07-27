@@ -27,6 +27,10 @@ body {
   padding: 0;
 }
 
+.container {
+  @apply px-[120px] py-24 flex flex-col
+}
+
 :root {
   padding: 0%
 }
@@ -57,4 +61,12 @@ body {
 
 .fotterSocialIcon {
   @apply text-white w-[28px] h-[28px]
+}
+
+.darkHeading {
+  @apply text-black font-fixel-medium text-[40px]
+}
+
+.lightHeading {
+  @apply text-white font-fixel-medium text-[40px]
 }

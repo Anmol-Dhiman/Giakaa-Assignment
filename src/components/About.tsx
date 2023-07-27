@@ -4,7 +4,7 @@ import { BsDiscord, BsTwitter } from 'react-icons/bs'
 const About = () => {
     return (
 
-        <div className='flex flex-col bg-black px-[150px] py-24 ' >
+        <div className={' bg-black  ' + "container"} >
 
             <div className='flex flex-row justify-between' >
                 <p className='text-white font-fixel-bold  '>CryptoPunks</p>

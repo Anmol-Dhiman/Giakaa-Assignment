@@ -4,7 +4,7 @@ import FAQs from './FAQs'
 
 const Info = () => {
     return (
-        <div className='flex flex-col bg-black rounded-t-[56px] px-[150px] py-24' >
+        <div className={'flex flex-col bg-black rounded-t-[56px]  ' + "container"} >
             < div className='mb-[128px]' >
                 <Steps />
             </div>

@@ -18,6 +18,10 @@ import eth from "../assets/eth.png"
 const logo_svg = require("../assets/logo.svg") as string
 const route_icon = require("../assets/route_icon.svg") as string
 
+const right = require("../assets/right.svg") as string
+const left = require("../assets/left.svg") as string
+
+
 export const ImageAssets = {
     image1,
     image2,
@@ -36,5 +40,7 @@ export const ImageAssets = {
     metamask,
     eth,
     logo_svg,
-    route_icon
+    route_icon,
+    right,
+    left
 }

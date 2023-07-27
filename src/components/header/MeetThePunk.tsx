@@ -30,7 +30,7 @@ const MeetThePunk = () => {
         <div className='flex flex-col w-full   ' >
             {/* header part of meet the punk the info part  */}
             <div className='flex flex-row justify-between' >
-                <p className=' font-fixel-medium text-white text-[40px] ' >Meet the Punks</p>
+                <p className={"lightHeading"} >Meet the Punks</p>
                 <div>
                     <p className='text-white font-fixel-regular text-[18px] w-[500px]' >The CryptoPunks are 24x24 pixel art images, generated algorithmically. Most are punky-looking guys and girls, but there are a few rarer types mixed in: Apes, Zombies and even the odd Alien. Every punk has their own profile page that shows their attributes as well as their ownership/for-sale status.</p>
                     <div className='flex flex-row mt-8   ' >
