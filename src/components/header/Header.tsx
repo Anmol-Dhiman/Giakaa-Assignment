@@ -4,7 +4,7 @@ import MeetThePunk from './MeetThePunk'
 
 const Header = () => {
     return (
-        <div className='flex flex-col items-center bg-black rounded-b-[56px]   py-24   ' >
+        <div className='flex flex-col items-center bg-black rounded-b-[56px] px-[150px]  py-24   ' >
 
             <div className='flex flex-row' >
                 <p className='text-white font-fixel-medium text-[30px] mr-2' >The project that inspired the modern</p>

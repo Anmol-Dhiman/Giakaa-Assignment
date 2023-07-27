@@ -7,7 +7,7 @@ const FeaturedIn = () => {
     return (
         <div className='flex flex-col items-center w-full ' >
             <p className='text-white font-fixel-medium text-[20px]' >Featured in</p>
-            <div className='flex flex-row w-full justify-between px-[200px]  mt-[64px]' >
+            <div className='flex flex-row w-full justify-between   mt-[64px]' >
                 <FeatureCard title='Mashable' content='This ethereum-based project could change how we think about digital art' onClick={() => { }} />
                 <FeatureCard title='Mashable' content='This ethereum-based project could change how we think about digital art' onClick={() => { }} />
                 <FeatureCard title='Mashable' content='This ethereum-based project could change how we think about digital art' onClick={() => { }} />

@@ -27,7 +27,7 @@ const MeetThePunk = () => {
 
 
     return (
-        <div className='flex flex-col w-full px-[200px] ' >
+        <div className='flex flex-col w-full   ' >
             {/* header part of meet the punk the info part  */}
             <div className='flex flex-row justify-between' >
                 <p className=' font-fixel-medium text-white text-[40px] ' >Meet the Punks</p>

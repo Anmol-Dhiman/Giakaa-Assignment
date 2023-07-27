@@ -50,3 +50,11 @@ body {
 .socialIcon:hover {
   @apply text-textHover
 }
+
+.footerButton {
+  @apply text-white font-fixel-regular mx-4 text-[15px]
+}
+
+.fotterSocialIcon {
+  @apply text-white w-[28px] h-[28px]
+}
