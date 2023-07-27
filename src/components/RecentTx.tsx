@@ -20,7 +20,9 @@ const RecentTx = () => {
             <div className="flex flex-row mt-24 ml-[120px] overflow-x-scroll whitespace-nowrap" >
                 {
                     RecentTransactionsNFTs.map((item, index) => {
-                        return <NFTCard nft={item} index={index} />
+                        return <div key={index} >
+                            <NFTCard nft={item} />
+                        </div>
                     })
                 }
             </div>
