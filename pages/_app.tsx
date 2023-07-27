@@ -9,6 +9,7 @@ import {
   polygonMumbai
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
+import { alchemyProvider } from 'wagmi/providers/alchemy'
 import NavBar from '../src/components/NavBar';
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [polygonMumbai],
-  [publicProvider()]
+  [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_URL! }), publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
