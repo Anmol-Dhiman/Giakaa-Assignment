@@ -16,6 +16,7 @@ const Header = () => {
         ImageAssets.image7,
         ImageAssets.image8,
         ImageAssets.image9,
+
     ]
 
 
@@ -29,7 +30,7 @@ const Header = () => {
                         {
                             headerImage.map((item, index) => {
                                 return (
-                                    <Image key={index} src={item} alt="header nft image" className='headerImage' />
+                                    <Image key={index} src={item} alt="header nft image" className='headerImage ' />
                                 )
                             })
                         }
@@ -39,7 +40,7 @@ const Header = () => {
                         {
                             headerImage.map((item, index) => {
                                 return (
-                                    <Image key={index} src={item} alt="header nft image" className='headerImage' />
+                                    <Image key={index} src={item} alt="header nft image" className='headerImage ' />
                                 )
                             })
                         }
