@@ -9,11 +9,12 @@ import { BsTwitter, BsDiscord } from "react-icons/bs"
 import { CgProfile } from "react-icons/cg"
 import { FiLogOut } from "react-icons/fi"
 import Link from 'next/link';
+import { useAccount, useNetwork } from 'wagmi';
 
 const NavBar = () => {
     const { openConnectModal } = useConnectModal();
-    const { chain } = getNetwork()
-    const account = getAccount()
+    const { chain } = useNetwork()
+    const account = useAccount()
     const [isClient, setIsClient] = useState(false)
     const [showDropDown, setDropDownStatus] = useState(false)
 
@@ -60,7 +61,7 @@ const NavBar = () => {
                 <button className='navTextButton'>Collection</button>
                 <button className='navTextButton'>FAQs</button>
                 <button className='connectButton' onClick={handleConnectButton}  >
-                    {isClient ? account.address != undefined ? `${account.address.substring(0, 8) + "..."}` : "Connect Wallet" : "Connect Wallet"}
+                    {isClient ? account.isConnected ? `${account.address?.substring(0, 8) + "..."}` : "Connect Wallet" : "Connect Wallet"}
                 </button>
                 {showDropDown && <div className="flex flex-col absolute z-10 mt-[170px]  right-[230px] rounded-xl px-2 py-2 border-[1px] border-[#475068] bg-black">
 
