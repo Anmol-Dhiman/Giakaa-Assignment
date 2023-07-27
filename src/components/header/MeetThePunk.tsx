@@ -47,7 +47,7 @@ const MeetThePunk = () => {
                     {
                         punks.map((item, index) => {
                             return (
-                                <PunkSelectionCard punk={item} isSelected={index === selectedPunk} onClick={() => { setSelectedPunk(index) }} />
+                                <PunkSelectionCard keyValue={index} punk={item} isSelected={index === selectedPunk} onClick={() => { setSelectedPunk(index) }} />
                             )
                         })
                     }
@@ -61,10 +61,10 @@ const MeetThePunk = () => {
     )
 }
 
-const PunkSelectionCard = ({ punk, onClick, isSelected }: { punk: { bg: string, text: string, image: StaticImageData }, onClick: () => void, isSelected: boolean }) => {
-    console.log(isSelected)
+const PunkSelectionCard = ({ punk, onClick, isSelected, keyValue }: { punk: { bg: string, text: string, image: StaticImageData }, onClick: () => void, isSelected: boolean, keyValue: number, }) => {
+    console.log(keyValue)
     return (
-        <button onClick={onClick} >
+        <button key={keyValue} onClick={onClick} >
             <p className=
                 {`font-fixel-medium text-[22px] mb-8 text-white w-[550px] text-left  rounded-[30px] px-[40px] py-[40px]   ${isSelected ? `${punk.bg}  p-[2px] ` : "border-border border-2"}   `} >{punk.text}</p>
         </button>

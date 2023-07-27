@@ -1,0 +1,226 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060e98061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806317d7de7c14602d575b600080fd5b604080518082018252601181527019da585ad85848185cdcda59db9b595b9d607a1b60208201529051605e91906067565b60405180910390f35b600060208083528351808285015260005b818110156092578581018301518582016040015282016078565b506000604082860101526040601f19601f830116850101925050509291505056fea2646970667358221220e3e78464111932233a693cef3f767c7d37e23413155f83dae0677f46cf14392064736f6c63430008140033",
+    "sourceMap": "61:138:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806317d7de7c14602d575b600080fd5b604080518082018252601181527019da585ad85848185cdcda59db9b595b9d607a1b60208201529051605e91906067565b60405180910390f35b600060208083528351808285015260005b818110156092578581018301518582016040015282016078565b506000604082860101526040601f19601f830116850101925050509291505056fea2646970667358221220e3e78464111932233a693cef3f767c7d37e23413155f83dae0677f46cf14392064736f6c63430008140033",
+    "sourceMap": "61:138:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;94:102;162:26;;;;;;;;;;;-1:-1:-1;;;162:26:0;;;;94:102;;;;162:26;94:102;:::i;:::-;;;;;;;;14:548:1;126:4;155:2;184;173:9;166:21;216:6;210:13;259:6;254:2;243:9;239:18;232:34;284:1;294:140;308:6;305:1;302:13;294:140;;;403:14;;;399:23;;393:30;369:17;;;388:2;365:26;358:66;323:10;;294:140;;;298:3;483:1;478:2;469:6;458:9;454:22;450:31;443:42;553:2;546;542:7;537:2;529:6;525:15;521:29;510:9;506:45;502:54;494:62;;;;14:548;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getName()": "17d7de7c"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/GiakaaAssignment.sol\":\"GiakaaAssignment\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/GiakaaAssignment.sol\":{\"keccak256\":\"0xa6e2b801c659b66a01cb14b48b3bb3a39cb3f4571c790466ef2df455507acfa0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://de1f103e0d44c1b0a0e13a9588e27ca4cc689ef233d637d2ff4dcade310cd4f3\",\"dweb:/ipfs/QmeTScWamPFRffbFTWERekJXWBgaG3LDp8PhgSV3ZNMwvJ\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getName",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/GiakaaAssignment.sol": "GiakaaAssignment"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/GiakaaAssignment.sol": {
+        "keccak256": "0xa6e2b801c659b66a01cb14b48b3bb3a39cb3f4571c790466ef2df455507acfa0",
+        "urls": [
+          "bzz-raw://de1f103e0d44c1b0a0e13a9588e27ca4cc689ef233d637d2ff4dcade310cd4f3",
+          "dweb:/ipfs/QmeTScWamPFRffbFTWERekJXWBgaG3LDp8PhgSV3ZNMwvJ"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/GiakaaAssignment.sol",
+    "id": 11,
+    "exportedSymbols": {
+      "GiakaaAssignment": [
+        10
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:168:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "33:24:0",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".20"
+        ]
+      },
+      {
+        "id": 10,
+        "nodeType": "ContractDefinition",
+        "src": "61:138:0",
+        "nodes": [
+          {
+            "id": 9,
+            "nodeType": "FunctionDefinition",
+            "src": "94:102:0",
+            "nodes": [],
+            "body": {
+              "id": 8,
+              "nodeType": "Block",
+              "src": "151:45:0",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "6769616b61612061737369676e6d656e74",
+                    "id": 6,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "169:19:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_68938e326d420cff2cf6d31124ee82b22caccfce34c6f583c6455fe3062a3e24",
+                      "typeString": "literal_string \"giakaa assignment\""
+                    },
+                    "value": "giakaa assignment"
+                  },
+                  "functionReturnParameters": 5,
+                  "id": 7,
+                  "nodeType": "Return",
+                  "src": "162:26:0"
+                }
+              ]
+            },
+            "functionSelector": "17d7de7c",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getName",
+            "nameLocation": "103:7:0",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "110:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "136:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 3,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "136:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "135:15:0"
+            },
+            "scope": 10,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "GiakaaAssignment",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          10
+        ],
+        "name": "GiakaaAssignment",
+        "nameLocation": "70:16:0",
+        "scope": 11,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 0
+}

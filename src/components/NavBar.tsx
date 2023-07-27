@@ -6,6 +6,8 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { getNetwork, getAccount, switchNetwork, disconnect } from '@wagmi/core'
 import { BsTwitter, BsDiscord } from "react-icons/bs"
+import { CgProfile } from "react-icons/cg"
+import { FiLogOut } from "react-icons/fi"
 import Link from 'next/link';
 
 const NavBar = () => {
@@ -57,14 +59,24 @@ const NavBar = () => {
                 <button className='navTextButton' >About</button>
                 <button className='navTextButton'>Collection</button>
                 <button className='navTextButton'>FAQs</button>
-                <button className='connectButton' onClick={handleConnectButton} >
+                <button className='connectButton' onClick={handleConnectButton}  >
                     {isClient ? account.address != undefined ? `${account.address.substring(0, 8) + "..."}` : "Connect Wallet" : "Connect Wallet"}
                 </button>
-                {showDropDown && <div className="flex flex-col absolute z-10 mt-28  right-[230px] rounded-xl px-2 py-2 border-[1px] border-[#475068] bg-black">
-                    <Link href="/profile">
-                        <button onClick={() => setDropDownStatus(false)} className='text-white font-fixel-medium text-[18px]'>profile</button>
-                    </Link>
-                    <button className='text-white font-fixel-medium text-[18px]' onClick={disconnectAccount} >log out</button>
+                {showDropDown && <div className="flex flex-col absolute z-10 mt-[170px]  right-[230px] rounded-xl px-2 py-2 border-[1px] border-[#475068] bg-black">
+
+                    <div className='flex flex-col px-12 py-2' >
+                        <Link href="/profile">
+                            <div className='flex flex-row items-center mb-4' >
+                                <CgProfile className='text-white mr-4 w-6 h-6 ' />
+                                <button onClick={() => setDropDownStatus(false)} className='text-white font-fixel-medium text-[18px]'>Profile</button>
+                            </div>
+                        </Link>
+                        <div className='flex flex-row items-center '   >
+                            <FiLogOut className='text-white mr-4 w-6 h-6 ' />
+                            <button className='text-white font-fixel-medium text-[18px]' onClick={disconnectAccount} >Log Out</button>
+                        </div>
+                    </div>
+
 
                 </div>}
                 <a>

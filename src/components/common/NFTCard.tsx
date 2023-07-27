@@ -5,9 +5,9 @@ import { NFTCardType } from '../../../types'
 
 
 
-const NFTCard = ({ nft }: { nft: NFTCardType }) => {
+const NFTCard = ({ nft, key }: { nft: NFTCardType, key: number }) => {
     return (
-        <div className='flex flex-col mr-8' >
+        <div key={key} className='flex flex-col mr-8' >
             <Image src={nft.image} alt='nft' width={400} height={400} />
             <p className='mt-4 font-fixel-bold text-black text-[26px] ' >{`#${nft.id}`}</p>
             <p className=' font-fixel-medium text-black text-[20px] ' >{nft.price}</p>

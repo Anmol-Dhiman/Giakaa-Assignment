@@ -19,8 +19,8 @@ const RecentTx = () => {
             </div>
             <div className='flex flex-row mt-24 overflow-x-auto ' >
                 {
-                    RecentTransactionsNFTs.map((item) => {
-                        return <NFTCard nft={item} />
+                    RecentTransactionsNFTs.map((item, index) => {
+                        return <NFTCard nft={item} key={index} />
                     })
                 }
             </div>

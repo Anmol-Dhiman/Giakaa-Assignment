@@ -16,8 +16,8 @@ const LargestSales = () => {
             </div>
             <div className='flex flex-row mt-24 overflow-x-auto ' >
                 {
-                    LargestSalesNFTs.map((item) => {
-                        return <NFTCard nft={item} />
+                    LargestSalesNFTs.map((item, index) => {
+                        return <NFTCard nft={item} key={index} />
                     })
                 }
             </div>

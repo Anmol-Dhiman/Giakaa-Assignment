@@ -1,12 +1,12 @@
 
 import React, { useEffect, useState } from 'react'
+import contractABI from "../abi/GiakaaAssignment.json"
+import { getNetwork, getAccount, switchNetwork, readContract } from '@wagmi/core'
 
-import { getNetwork, getAccount, switchNetwork, disconnect } from '@wagmi/core'
-import { useConnectModal } from '@rainbow-me/rainbowkit';
 
 const profile = () => {
 
-    const { openConnectModal } = useConnectModal();
+
     const { chain } = getNetwork()
     const account = getAccount()
     const [isClient, setIsClient] = useState(false)
@@ -25,11 +25,28 @@ const profile = () => {
                     })
                     console.log(network)
                 }
+                else {
+                    try {
+                        console.log("address", account.address)
+                        const data = await readContract({
+                            address: '0x77fe89354a331aEB51a0737E4aaBcf25c9DbAaBd',
+                            abi: contractABI.abi,
+                            functionName: 'getName'
+                        })
+
+
+                        console.log(data)
+                    } catch (e) {
+                        console.log("error", e)
+                    }
+                }
             }
 
         }
         networkChecking()
     }, [account])
+
+
 
     return (
         <div className=' flex  h-screen justify-center flex-col items-center bg-black ' >

@@ -23,7 +23,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: 'Giakaa Assignment',
-  projectId: '8a828f19acfdae048ba0f11ed8530724',
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID!,
   chains,
 });
 
@@ -35,6 +35,7 @@ const wagmiConfig = createConfig({
 });
 
 function MyApp({ Component }: AppProps) {
+
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains}>

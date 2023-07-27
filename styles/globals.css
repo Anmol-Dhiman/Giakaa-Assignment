@@ -70,3 +70,36 @@ body {
 .lightHeading {
   @apply text-white font-fixel-medium text-[40px]
 }
+
+.headerImage {
+  @apply w-[159px] mx-2
+}
+
+/* animation  */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+.header-slider-container {
+  @apply overflow-hidden whitespace-nowrap pt-24
+}
+
+
+
+.header-slider {
+  display: inline-block;
+  animation: 5s slide infinite linear;
+}
+
+
+
+.header-slider-container:hover .header-slider {
+  animation-play-state: paused;
+}
