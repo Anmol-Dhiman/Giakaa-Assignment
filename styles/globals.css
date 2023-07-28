@@ -138,5 +138,5 @@ body {
 }
 
 .infoDividerLine {
-  @apply bg-border w-[0.4px] flex-1 my-3
+  @apply bg-border w-[1px] flex-1 my-4
 }
