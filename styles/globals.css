@@ -120,3 +120,23 @@ body {
 .navContainer {
   @apply flex flex-row items-center
 }
+
+.serialNumber {
+  @apply text-white rounded-full border-white border-[1px] px-[20px] py-[12px]
+}
+
+.infoHeading {
+  @apply text-white font-fixel-medium mb-6
+}
+
+.infoText {
+  @apply text-white font-fixel-regular mb-6 w-[500px]
+}
+
+.infoSerialNumberContainer {
+  @apply flex flex-col items-center mr-12
+}
+
+.infoDividerLine {
+  @apply bg-border w-[0.4px] flex-1 my-3
+}
